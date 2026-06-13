@@ -16,7 +16,22 @@ A cross-network remote desktop control application that enables real-time screen
 - **Power Management**: Remote shutdown, restart, and sleep commands with countdown warning UI
 - **Splash Screen**: Animated startup screen with custom branding
 
+## How to Use
 
+### 1. Find Your IPv4 (Host Machine)
+- Open **CMD** → type `ipconfig`
+- Look for **IPv4 Address** (e.g. `192.168.1.x`)
+
+### 2. Run the Server (Host Machine)
+- Launch **ADC Server**
+- Make sure the server is running before connecting
+
+### 3. Connect from Controller
+- Launch **ADC Client** on the controlling machine
+- Enter the **IPv4 address** of the host machine
+- Click **Connect**
+
+> 💡 For cross-network access, use ZeroTier or Tailscale, enter the virtual IP instead of local IPv4.
 
 ## Tech Stack
 - **Language**: Java, C#
